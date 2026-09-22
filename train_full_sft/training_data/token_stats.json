@@ -1,0 +1,356 @@
+{
+  "input": "training_data/sft_train.jsonl",
+  "model": "/public/home/hh_hh/LoRA/models/Qwen3-4B",
+  "enable_thinking": false,
+  "num_examples": 600,
+  "overall": {
+    "prompt": {
+      "count": 600,
+      "min": 841,
+      "p50": 7018.0,
+      "p75": 11483.25,
+      "p90": 16774.2,
+      "p95": 19848.849999999995,
+      "p99": 29294.699999999997,
+      "max": 44130,
+      "mean": 8868.456666666667
+    },
+    "target": {
+      "count": 600,
+      "min": 370,
+      "p50": 1321.5,
+      "p75": 1642.75,
+      "p90": 2064.6000000000004,
+      "p95": 2342.0,
+      "p99": 3310.3799999999997,
+      "max": 3819,
+      "mean": 1418.2333333333333
+    },
+    "total": {
+      "count": 600,
+      "min": 1211,
+      "p50": 8334.0,
+      "p75": 13144.25,
+      "p90": 18659.800000000003,
+      "p95": 22325.899999999994,
+      "p99": 31637.99999999999,
+      "max": 46277,
+      "mean": 10286.69
+    },
+    "mean_target_fraction": 0.1622120822434273
+  },
+  "thresholds": {
+    "4096": {
+      "fit": 43,
+      "over": 557,
+      "fit_pct": 7.166666666666667
+    },
+    "8192": {
+      "fit": 290,
+      "over": 310,
+      "fit_pct": 48.333333333333336
+    },
+    "16384": {
+      "fit": 512,
+      "over": 88,
+      "fit_pct": 85.33333333333333
+    },
+    "24576": {
+      "fit": 578,
+      "over": 22,
+      "fit_pct": 96.33333333333333
+    },
+    "32768": {
+      "fit": 594,
+      "over": 6,
+      "fit_pct": 99.0
+    },
+    "49152": {
+      "fit": 600,
+      "over": 0,
+      "fit_pct": 100.0
+    },
+    "65536": {
+      "fit": 600,
+      "over": 0,
+      "fit_pct": 100.0
+    }
+  },
+  "sources": {
+    "govreport/crs": {
+      "count": 200,
+      "prompt": {
+        "count": 200,
+        "min": 841,
+        "p50": 7445.0,
+        "p75": 11618.75,
+        "p90": 16817.899999999998,
+        "p95": 21782.149999999976,
+        "p99": 30863.49999999993,
+        "max": 44130,
+        "mean": 9206.58
+      },
+      "target": {
+        "count": 200,
+        "min": 370,
+        "p50": 1603.5,
+        "p75": 2056.25,
+        "p90": 2526.7000000000003,
+        "p95": 2929.8999999999987,
+        "p99": 3534.079999999999,
+        "max": 3819,
+        "mean": 1732.09
+      },
+      "total": {
+        "count": 200,
+        "min": 1211,
+        "p50": 9118.5,
+        "p75": 13543.75,
+        "p90": 19109.899999999998,
+        "p95": 24307.999999999978,
+        "p99": 33903.149999999936,
+        "max": 46277,
+        "mean": 10938.67
+      }
+    },
+    "govreport/gao": {
+      "count": 200,
+      "prompt": {
+        "count": 200,
+        "min": 3500,
+        "p50": 10802.5,
+        "p75": 15024.25,
+        "p90": 18662.999999999996,
+        "p95": 23520.59999999999,
+        "p99": 29508.66999999996,
+        "max": 37502,
+        "mean": 11499.86
+      },
+      "target": {
+        "count": 200,
+        "min": 677,
+        "p50": 1397.5,
+        "p75": 1635.25,
+        "p90": 1869.4999999999998,
+        "p95": 2079.05,
+        "p99": 2330.2699999999995,
+        "max": 2456,
+        "mean": 1435.93
+      },
+      "total": {
+        "count": 200,
+        "min": 4303,
+        "p50": 12385.0,
+        "p75": 16440.0,
+        "p90": 20129.199999999997,
+        "p95": 25350.799999999996,
+        "p99": 31674.59999999996,
+        "max": 39677,
+        "mean": 12935.79
+      }
+    },
+    "qasper/-": {
+      "count": 200,
+      "prompt": {
+        "count": 200,
+        "min": 1310,
+        "p50": 5555.0,
+        "p75": 7111.5,
+        "p90": 8636.599999999999,
+        "p95": 9673.699999999975,
+        "p99": 15516.629999999997,
+        "max": 17171,
+        "mean": 5898.93
+      },
+      "target": {
+        "count": 200,
+        "min": 482,
+        "p50": 1087.0,
+        "p75": 1234.0,
+        "p90": 1348.3,
+        "p95": 1467.25,
+        "p99": 1774.8599999999992,
+        "max": 1878,
+        "mean": 1086.68
+      },
+      "total": {
+        "count": 200,
+        "min": 1932,
+        "p50": 6778.0,
+        "p75": 8327.75,
+        "p90": 9881.199999999999,
+        "p95": 10971.049999999977,
+        "p99": 17022.91,
+        "max": 18909,
+        "mean": 6985.61
+      }
+    }
+  },
+  "longest": [
+    {
+      "index": 217,
+      "id": "govreport_crs_RL34070",
+      "dataset": "govreport",
+      "subset": "crs",
+      "prompt_tokens": 44130,
+      "target_tokens": 2147,
+      "total_tokens": 46277,
+      "target_fraction": 0.04639453724312293,
+      "boundary_method": "prefix"
+    },
+    {
+      "index": 254,
+      "id": "govreport_crs_R41037",
+      "dataset": "govreport",
+      "subset": "crs",
+      "prompt_tokens": 38140,
+      "target_tokens": 3401,
+      "total_tokens": 41541,
+      "target_fraction": 0.08187092270287186,
+      "boundary_method": "prefix"
+    },
+    {
+      "index": 88,
+      "id": "govreport_gao_GAO-05-536",
+      "dataset": "govreport",
+      "subset": "gao",
+      "prompt_tokens": 37502,
+      "target_tokens": 2175,
+      "total_tokens": 39677,
+      "target_fraction": 0.05481765254429519,
+      "boundary_method": "prefix"
+    },
+    {
+      "index": 86,
+      "id": "govreport_gao_GAO-14-18",
+      "dataset": "govreport",
+      "subset": "gao",
+      "prompt_tokens": 34030,
+      "target_tokens": 2456,
+      "total_tokens": 36486,
+      "target_fraction": 0.067313490105794,
+      "boundary_method": "prefix"
+    },
+    {
+      "index": 284,
+      "id": "govreport_crs_R44240",
+      "dataset": "govreport",
+      "subset": "crs",
+      "prompt_tokens": 30790,
+      "target_tokens": 3036,
+      "total_tokens": 33826,
+      "target_fraction": 0.08975344409625732,
+      "boundary_method": "prefix"
+    },
+    {
+      "index": 250,
+      "id": "govreport_crs_R41108",
+      "dataset": "govreport",
+      "subset": "crs",
+      "prompt_tokens": 29293,
+      "target_tokens": 3533,
+      "total_tokens": 32826,
+      "target_fraction": 0.10762809967708524,
+      "boundary_method": "prefix"
+    },
+    {
+      "index": 57,
+      "id": "govreport_gao_GAO-09-71",
+      "dataset": "govreport",
+      "subset": "gao",
+      "prompt_tokens": 29463,
+      "target_tokens": 2163,
+      "total_tokens": 31626,
+      "target_fraction": 0.06839309428950863,
+      "boundary_method": "prefix"
+    },
+    {
+      "index": 197,
+      "id": "govreport_gao_GAO-04-345",
+      "dataset": "govreport",
+      "subset": "gao",
+      "prompt_tokens": 27247,
+      "target_tokens": 2173,
+      "total_tokens": 29420,
+      "target_fraction": 0.0738613188307274,
+      "boundary_method": "prefix"
+    },
+    {
+      "index": 71,
+      "id": "govreport_gao_GAO-08-837",
+      "dataset": "govreport",
+      "subset": "gao",
+      "prompt_tokens": 26755,
+      "target_tokens": 2357,
+      "total_tokens": 29112,
+      "target_fraction": 0.08096317669689475,
+      "boundary_method": "prefix"
+    },
+    {
+      "index": 377,
+      "id": "govreport_crs_R40431",
+      "dataset": "govreport",
+      "subset": "crs",
+      "prompt_tokens": 25955,
+      "target_tokens": 2894,
+      "total_tokens": 28849,
+      "target_fraction": 0.10031543554369302,
+      "boundary_method": "prefix"
+    },
+    {
+      "index": 27,
+      "id": "govreport_gao_GAO-10-861",
+      "dataset": "govreport",
+      "subset": "gao",
+      "prompt_tokens": 25836,
+      "target_tokens": 2330,
+      "total_tokens": 28166,
+      "target_fraction": 0.08272385145210538,
+      "boundary_method": "prefix"
+    },
+    {
+      "index": 395,
+      "id": "govreport_crs_RL34104",
+      "dataset": "govreport",
+      "subset": "crs",
+      "prompt_tokens": 25801,
+      "target_tokens": 1988,
+      "total_tokens": 27789,
+      "target_fraction": 0.07153909820432545,
+      "boundary_method": "prefix"
+    },
+    {
+      "index": 160,
+      "id": "govreport_gao_NSIAD-99-36",
+      "dataset": "govreport",
+      "subset": "gao",
+      "prompt_tokens": 25336,
+      "target_tokens": 2274,
+      "total_tokens": 27610,
+      "target_fraction": 0.08236146323795726,
+      "boundary_method": "prefix"
+    },
+    {
+      "index": 289,
+      "id": "govreport_crs_RL34309",
+      "dataset": "govreport",
+      "subset": "crs",
+      "prompt_tokens": 25656,
+      "target_tokens": 1845,
+      "total_tokens": 27501,
+      "target_fraction": 0.06708846951019963,
+      "boundary_method": "prefix"
+    },
+    {
+      "index": 325,
+      "id": "govreport_crs_R43990",
+      "dataset": "govreport",
+      "subset": "crs",
+      "prompt_tokens": 23635,
+      "target_tokens": 3819,
+      "total_tokens": 27454,
+      "target_fraction": 0.13910541269031834,
+      "boundary_method": "prefix"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "date": "2026-08-26",
+  "file": "train_sft_lora.py",
+  "sha256": "1ac9ac37a42acf75858b56bc3806ff65d4fea2168bc8daa7e7ec8ca00afc0330",
+  "formal_config": {
+    "max_length": 40960,
+    "expected_kept_samples": 598,
+    "Optimizer": "AdamW",
+    "Scheduler": "cosine",
+    "Warmup_ratio": 0.03,
+    "Weight_decay": 0.0,
+    "batch / GPU": 1,
+    "expected_excluded_samples": 2,
+    "GPUs": 3,
+    "per_device_batch_size": 1,
+    "gradient_accumulation_steps": 3,
+    "effective_batch_size": 9,
+    "epochs": 3,
+    "learning_rate": 0.0001,
+    "lora_r": 32,
+    "lora_alpha": 64,
+    "lora_dropout": 0.05,
+    "completion_only_loss": true,
+    "group_by_length": true,
+    "ddp_find_unused_parameters": false
+  }
+}
