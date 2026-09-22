@@ -8,28 +8,10 @@ Long-Context Structured Compression with SFT + RL.
 
 ## Project Structure
 
-.
-├── SFT-data-annotation      # SFT 训练数据构造与标注流程
-├── train_full_sft           # Full Parameter SFT 训练代码
-├── train_lora_sft           # LoRA-based SFT 训练代码
-├── train_RL                # RL post-training 训练流程
-├── GRPO_data_pipeline      # GRPO 数据处理与训练 pipeline
-└── scripts                 # 实验运行脚本与辅助工具
+SFT-data-annotation      # SFT 训练数据构造与标注流程
+train_full_sft           # Full Parameter SFT 训练代码
+train_lora_sft           # LoRA-based SFT 训练代码
+train_RL                  # RL post-training 训练流程
+GRPO_data_pipeline      # GRPO 数据处理与训练 pipeline
+scripts                 # 实验运行脚本与辅助工具
 
-
-## Training Pipeline
-
-1. Data Construction  
-   - SFT 数据生成与标注
-
-2. Supervised Fine-tuning  
-   - Full SFT
-   - LoRA SFT
-
-3. Reinforcement Learning  
-   - GRPO-based post-training
-
-## Note
-
-本仓库包含论文项目中的核心实现代码，
-部分训练数据、模型权重及实验配置未公开。
